@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Simulator</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+    <main>
+      <div class="landing-page">
+        <h1>Test your typing skills</h1>
+      </div>
+      <div class="subtext">
+        <div class="description">
+          <p>Pick a duration of the test. The clock starts when you correctly type
+            the word "start" (as displayed lower in the "Type this" area). Then a new
+            word appears in this area each time you correctly spell out the given word.
+            Careful, the test is case sensitive. <br> Work fast! When the timer finishes, you are shown the amount of words you've
+            correctly typed out. 
+          </p>
+        </div>
+        <div>
+          <fieldset>
+            <legend>Choose your time:</legend>
+            <div class="option">
+              <input type="radio" id="15s" name="timeout" value="15">
+                15s
+            </div>
+            <div class="option">
+              <input type="radio" id="30s" name="timeout" value="30">
+                30s
+            </div>
+            <div class="option">  
+              <input type="radio" id="1min" name="timeout" value="60">
+                1min
+            </div>
+          </fieldset>
+        </div>
+      </div>
+
+      <div id="sentence-area">
+        <h3>Type this:</h3>
+        <p id="word-generator">start</p>
+      </div>
+
+      <div id="changing-area">
+
+        <div id="input-area">
+          <textarea name="main-input" id="main-input" placeholder="Enter here"></textarea>
+        </div>  
+      
+        <div id="test-info">
+          <h3>Current info:</h3>
+          <ul>
+            <li>
+              <p>Time remaining: </p>
+              <ul>
+                <li>
+                  <p id="timer">The test hasn't begun yet</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p>Words in total</p>
+              <ul>
+                <li>
+                  <p id="curr-score">0</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button id="reset">Reset</button>
+            </li>
+          </ul>
+        
+        </div>
+      </div>
+    </main>
+    <footer>
+      Warning: This site was created by a MATFYZ student so it contains terrible design choices.
+    </footer>
+    <script src="index.js"></script>  
+  </body>
+</html>
+

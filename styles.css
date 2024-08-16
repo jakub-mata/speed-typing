@@ -1,0 +1,222 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 100%;
+    background-color: white;
+}
+
+header {
+    width: 100%;
+    background-color: black;
+    padding: 1rem 3rem;
+    color: whitesmoke
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    gap: 10%;
+}
+
+nav a{
+    color: whitesmoke
+}
+
+a:hover {
+    cursor: pointer;
+    color: red
+}
+
+/* MAIN */
+
+.landing-page{
+    width: 100%;
+    height: 70vh;
+    background-image: url("cool-background.png");
+    background-size: contain;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+
+}
+
+.landing-page h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-family: "Helvetica";
+}
+
+#fast {
+    font-style: italic;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.subtext {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 3rem 0;
+    background: whitesmoke;
+}
+
+.description {
+    display: block;
+    padding-left: 10%;
+    padding-right: 1rem;
+    border-right: 2px groove gray;
+    margin: auto;
+    font-size: 1.1rem;
+    text-align: justify;
+    max-width: 500px;
+}
+
+.ps {
+    margin: 1rem 0;
+}
+
+table {
+    border: 2px groove  gray;
+}
+
+td {
+    padding: 0.2rem;
+}
+
+td >.age{
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.grid {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20%;
+}
+
+#qq {
+    width: 80%;
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 3rem 0;
+    border: 2px groove gray;
+    border-radius: 20px;
+}
+
+#qq p{
+    text-align: center;
+}
+
+#qq h3{
+    text-align: center;
+} 
+
+button {
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    margin: 1rem 0;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    color: whitesmoke;
+    height: 50px;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    padding-left: 3rem;
+}
+
+/*deadend*/
+
+#error {
+    color: red;
+    
+}
+
+#error-text {
+    text-align: center;
+}
+
+/*test*/
+
+
+
+#changing-area {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 2rem;
+    width: 80%;
+    margin: 2rem auto;
+}
+
+textarea {
+    height: 8rem;
+    width: 100%;
+    max-width: 500px;
+}
+
+#sentence-area {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+#main-input {
+    font-size: 1.4rem;
+    background-color: #F4EAE0;
+    padding: 1rem;
+}
+
+legend {
+    font-size: 1.2rem;
+}
+
+.option {
+    padding: 1rem;
+    font-size: 1.2rem;
+
+}
+
+#word-generator {
+    font-size: 1.6rem;
+    color: red
+}
+
+#timer {
+    color: red;
+    font-size: 1.2rem;
+}
+
+#timer::after {
+    content: " s";
+}
+
+#curr-score {
+    font-size: 1.2rem;
+}
+
+#curr-score::after {
+    content: " words";
+}
+
+ul {
+    padding-left: 3rem;
+}
+
+
